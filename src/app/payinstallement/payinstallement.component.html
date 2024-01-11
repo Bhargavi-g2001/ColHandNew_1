@@ -1,0 +1,98 @@
+<!-- <div class="cust_area2"> -->
+    <body class="sub_page">
+        <div class="hero_area">
+          <!-- header section strats -->
+          <header class="header_section">
+            <div class="container">
+              <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+                <a class="navbar-brand mr-5" href="index.html">
+                  <img src="../assets/images/pay3.png" alt="">
+                  <span style="color: red;">
+                    Propay
+                  </span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                    <ul class="navbar-nav  ">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" routerLink="/about"> About </a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" routerLink="/admin">Admin </a>
+                          </li>
+                        <li class="nav-item">
+                          <a class="nav-link" routerLink="/CustomerSupport"> CustomerSupport </a>
+                        </li> -->
+                        <li class="nav-item">
+                          <a class="nav-link" routerLink="/customer1"> Logout </a>
+                        </li>
+                       
+                      </ul>
+                    <!-- <form class="form-inline">
+                      <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                    </form> -->
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </header>
+          <!-- end header section -->
+          
+        </div>
+    </body><br><br>
+    <div class="contain" >
+        <body style="text-align: center;">
+            <h3>Postpaid Installment Options</h3>
+        
+            <!-- <form action="process_recharge.php" method="POST"  #frm="ngForm"> -->
+                <label for="installments">Select the number of installments:</label>
+                <select [(ngModel)]="selectedValue">
+                   
+                    <option value="2">2 Installments</option>
+                    <option value="3">3 Installments</option>
+                   
+                </select><br><br><br>
+        
+                
+        
+                 <button type="submit" routerLink="/payment" style="background-color:grey;" (click)="onsubmit()">Proceed to Pay </button>
+            <!-- </form> -->
+        </body>
+    </div>
+<!-- </div> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recharge Installment Options</title>
+</head>
+<body style="text-align: center;">
+    <h1>Recharge Installment Options</h1>
+
+    <form action="process_recharge.php" method="POST">
+        <label for="installments">Select the number of installments:</label>
+        <select name="installments" id="installments">
+           
+            <option value="2">2 Installments</option>
+            <option value="3">3 Installments</option>
+            
+        </select><br>
+
+        You can add more fields for user information here, like phone number, amount, etc. -->
+
+        <!-- <button type="submit">Proceed to Pay</button>
+    </form>
+</body>
+</html> --> 

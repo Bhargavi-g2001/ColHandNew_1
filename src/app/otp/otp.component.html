@@ -1,0 +1,81 @@
+
+<!-- <button routerLink="/paymentoptions">submit</button> -->
+
+<body class="sub_page">
+    <div class="hero_area">
+       <!-- header section strats  -->
+      <header class="header_section">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+            <a class="navbar-brand mr-5" href="index.html">
+              <img src="../assets/images/pay3.png" alt="">
+              <span style="color: red;">
+               Propay
+              </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                <ul class="navbar-nav  ">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" routerLink="/about"> About </a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" routerLink="/admin">Admin </a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" routerLink="/CustomerSupport"> CustomerSupport </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" routerLink="/Customer"> Customer </a>
+                    </li> -->
+                    <li class="nav-item">
+                      <a class="nav-link" routerLink="/Customer"> Logout </a>
+                    </li> 
+                  </ul>
+               
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autofocus Field</title>
+  <link rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <br><br>
+  <!-- <div class="otpboxcontainer"> -->
+  <div class="container otp-container">
+    <form [formGroup]="otpForm"> 
+    <h1>ENTER OTP</h1>
+    <div class="userInput">
+      <input type="text" id='ist' formControlName="otp1"  maxlength="1" onkeyup="clickEvent(this,'sec')">
+      <input type="text" id="sec" formControlName="otp2"     maxlength="1" onkeyup="clickEvent(this,'third')">
+      <input type="text" id="third" formControlName="otp3"  maxlength="1" onkeyup="clickEvent(this,'fourth')">
+      <input type="text" id="fourth"  formControlName="otp4" maxlength="1" onkeyup="clickEvent(this,'fifth')">
+      <input type="text" id="fifth" formControlName="otp5" maxlength="1" onkeyup="clickEvent(this,'sixth')">
+      <input type="text" id="sixth" formControlName="otp6" maxlength="1">
+    </div> 
+    <div class="container1">
+    <button (click)="verifyOTP()" type="submit" [disabled]="otpForm.invalid">CONFIRM</button>
+    
+    </div>
+    </form>
+  </div>
+<!-- </div> -->
+  
+</body>
+</html> 
+

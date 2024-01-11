@@ -1,0 +1,16 @@
+.button-table {
+    display: table;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .button-row {
+    display: table-row;
+  }
+  .button-row button {
+    display: table-cell;
+    width: 200px; /* Set a fixed width for all buttons */
+    height: 55px; /* Set a fixed height for all buttons */
+    padding: 10px;
+    border: 1px solid #ccc;
+  }

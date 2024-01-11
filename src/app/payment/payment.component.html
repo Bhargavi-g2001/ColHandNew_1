@@ -1,0 +1,219 @@
+<body class="sub_page">
+    <div class="hero_area">
+      <!-- header section strats -->
+      <header class="header_section">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+            <a class="navbar-brand mr-5" href="index.html">
+              <img src="../assets/images/pay3.png" alt="">
+              <span style="color: red;">
+                Propay
+              </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                <ul class="navbar-nav  ">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" routerLink="/about"> About </a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" routerLink="/admin">Admin </a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" routerLink="/CustomerSupport"> CustomerSupport </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" routerLink="/Customer"> Customer </a> 
+                    </li> -->
+                    <li class="nav-item">
+                      <a class="nav-link" routerLink="/otherissues"> Issues </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" routerLink="/Customer"> Logout </a>
+                    </li>
+                   
+                  </ul>
+                <!-- <form class="form-inline">
+                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                </form> -->
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- end header section -->
+    </div><br>
+
+<!-- Credit card form -->
+
+  <!DOCTYPE html>
+
+<html lang="en">
+
+ 
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Payment Form - Sagar Developer</title>
+
+    <link rel="stylesheet" href="">
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+</head>
+
+ 
+<div class="color">
+ 
+<body>
+   <h3 style="text-align: center; "> <span class="blink">Welcome  {{responseData.name}} !!</span>  </h3> 
+  
+    <div class="wrapper">
+    
+
+        <h2>Payment Form</h2>
+
+        <form action="" method="post" class="was-validated"  #payform="ngForm">
+
+          <h4>Account</h4>
+
+            <div class="input_group">
+
+                <div class="input_box">
+
+                    <input type="text" placeholder="Full Name" required class="name">
+
+                    <i class="fa fa-user icon"></i>
+
+                </div>
+
+                <!-- <div class="input_box">
+
+                    <input type="text" placeholder="Name on Card" required class="name">
+
+                    <i class="fa fa-user icon"></i>
+
+                </div> -->
+
+            </div>
+
+
+            <div class="input_group">
+
+                <div class="input_box">
+
+                    <h4>Payment Using</h4>
+
+                    <input type="radio" name="pay" class="radio" id="bc1" checked>
+
+                    <label for="bc1"><span>
+
+                            <i class="fa fa-cc-visa"></i>Credit Card</span></label>
+
+                    <input type="radio" name="pay" class="radio" id="bc2">
+
+                    <label for="bc2"><span>
+
+                            <i class="fa fa-cc-paypal"></i>DebitCard</span></label>
+
+                </div>
+
+            </div>
+
+            <!-- <div class="input_group">
+              <div class="input_box">
+               <h4>Cardnumber</h4> <input    type="text"    id="cardNumber"    name="cardNumber"    placeholder="Enter 12 digit number"    pattern="^\d{16}$"    [(ngModel)]="cardNumber"    required    #cardNumberInput="ngModel"    [ngClass]="{'invalid': cardNumberInput.invalid && cardNumberInput.touched}" >
+                 <div *ngIf="cardNumberInput.invalid && cardNumberInput.touched" class="error-message">    Invalid Card Number   </div>
+          </div>
+          </div>
+
+            <div class="input_group">
+              <div class="input_box">
+               <h4>CVV</h4><input    type="text"    id="cvv"    name="cvv"    placeholder="123"    pattern="^\d{3,4}$"    [(ngModel)]="cvv"    required    #cvvInput="ngModel"    [ngClass]="{'invalid': cvvInput.invalid && cvvInput.touched}" > 
+                   <div *ngIf="cvvInput.invalid && cvvInput.touched" class="error-message">    Invalid CVV   </div>
+              </div>
+             
+          </div> -->
+          <div class="input_group">
+            <div class="input_box">
+              <!-- <h4>Card Number</h4> -->
+              <input type="text" placeholder="Card Number" required class="name" id="cardNumber" name="cardNumber" pattern="^\d{16}$" [(ngModel)]="cardNumber" #cardNumberInput="ngModel" [ngClass]="{'invalid': cardNumberInput.invalid && cardNumberInput.touched}">
+              <i class="fa fa-credit-card icon"></i>
+            </div>
+            <div *ngIf="cardNumberInput.invalid && cardNumberInput.touched" class="error-message">Invalid Card Number</div>
+          </div>
+          
+          
+          <div class="input_group">
+            <div class="input_box">
+              <h4>CVV</h4>
+              <input type="text" placeholder=" Enter CVV" required class="name" id="cvv" name="cvv" pattern="^\d{3,4}$" [(ngModel)]="cvv" #cvvInput="ngModel" [ngClass]="{'invalid': cvvInput.invalid && cvvInput.touched}">
+            </div>
+            <div *ngIf="cvvInput.invalid && cvvInput.touched" class="error-message">Invalid CVV</div>
+          </div>
+          
+
+            <div class="input_group">
+              
+                <div class="input_box">
+                  <h4>Expiration Date</h4>
+                      
+                        <input type="month" placeholder="Exp Month" required class="name" >
+
+                        <!-- <i class="fa fa-calendar icon" aria-hidden="true"></i> -->
+
+                </div>
+
+               
+
+            </div>
+           
+            
+
+          
+
+ 
+
+            <div class="input_group">
+
+                <div class="input_box">
+
+                    <button  
+
+                    [disabled]="payform.form.invalid" (click)="onSubmit()" routerLink="/paymentsucces"  >PAY NOW {{condition}} </button>
+
+                </div>
+
+            </div>
+            <div class="input_group">
+
+              <div class="input_box">
+<p style="text-align: center;">or pay by</p>
+ <button routerLink="/paymentupi" >pay using upi {{condition}}</button>
+              </div></div>
+        </form>
+
+    </div>
+
+ 
+  
+</body>
+</div>
+<!-- </div> -->
+
+</html>
+
+        

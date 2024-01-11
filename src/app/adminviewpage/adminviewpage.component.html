@@ -1,0 +1,108 @@
+<!-- <p>adminviewpage works!</p> -->
+
+<!-- <body class="sub_page"> -->
+    <div class="hero_area">
+      
+      <!-- header section strats -->
+      <header class="header_section">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+            <a class="navbar-brand mr-5" href="index.html">
+              <img src="../assets/images/pay3.png" alt="">
+              <span style="color: red;">
+               Propay
+              </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                <ul class="navbar-nav  ">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" routerLink="/about"> About </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/admin">Logout </a>
+                      </li>
+                    <!-- <li class="nav-item">
+                      <a class="nav-link" routerLink="/CustomerSupport"> CustomerSupport </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" routerLink="/Customer"> Customer </a>
+                    </li> -->
+                   
+                  </ul>
+                <!-- <form class="form-inline">
+                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                </form> -->
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- end header section -->
+    
+
+<br><br>
+
+<div class="centered-text">
+<h4 style="color: white;">Customer Details</h4></div>
+<table  class="center" border="6px" style="color: white;">
+<thead>
+    <th>id</th>
+    <th>Name</th>
+    <th>phone</th>
+    <th>email</th>
+    <th>duedate</th>
+    <th>status</th>
+    <th>previousbalance</th>
+    <th>currentbalance</th>
+    <th>outstandingbalance</th>
+    
+    
+</thead>
+<tbody>
+   <tr *ngFor  ="let customer of customers">
+<td>{{customer.customer_id}}</td>
+<td>{{customer.name}}</td>
+<td>{{customer.mobile}}</td>
+<td>{{customer.email}}</td>
+<td>{{customer.duedate}}</td>
+<td>{{customer.status}}</td>
+<td>{{customer.previousbalance}}</td>
+<td>{{customer.currentbalance}}</td>
+<td>{{customer.outbalance}}</td>
+
+<!-- <td>{{customer.previousbalance}}</td> -->
+
+</tr>
+<!-- <tr>
+    <td>1</td>
+<td>Kavi</td>
+<td>9344738292</td>
+<td>kavi12@gmail.com</td>
+<td>10/11/2023</td>
+<td>555</td>
+<td>paid</td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>priya</td>
+    <td>9344738292</td>
+    <td>kavi12@gmail.com</td>
+    <td>10/11/2023</td>
+    <td>555</td>
+    <td>unpaid</td>
+    </tr> -->
+</tbody>
+
+
+
+
+</table></div>
+<!-- </body> -->

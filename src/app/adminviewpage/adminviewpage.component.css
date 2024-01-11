@@ -1,0 +1,13 @@
+table{
+    width:90%
+    
+}
+th,td{
+    padding: 7px;
+    text-align: center;
+    table-layout:fixed;
+}
+.centered-text {
+    text-align: center;
+    color: white;
+  }

@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 90vh;
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ac4848);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,rgb(57, 55, 55), rgb(65, 62, 62)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  }
+  
+  .container{
+    display: flex;
+    flex-flow: column;
+    height: 90%;
+    align-items: space-around;
+    justify-content: center;
+    /* background-color: yellow; */
+  }
+  
+  .userInput{
+    display: flex;
+    justify-content: center;
+  }
+  
+  input{
+    margin: 10px;
+    height: 30px;
+    width: 65px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-family: arimo;
+    font-size: 1.2rem;
+    background: rgb(234, 233, 230);  /*for  6 boxes */
+  
+  }
+  /*for  enter otp */
+  h1{
+    text-align: center;
+    font-family: arimo;
+    color: rgb(14, 15, 14); 
+  }
+  
+  
+  button{
+    width: 150px;
+    height: 40px;
+    margin: 25px auto 0px auto;
+    font-family: arimo;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    background: #616161;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1d8782, #616161);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #dbcfc9, #cac0c0); /* for confirm button W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  }
+  .container1 {
+    text-align: center;
+   
+  }
+  .otp-container {
+    background-color:darkgray;
+    padding: 20px; /* Adjust the padding as needed */
+    border-radius: 35px; /* Add rounded corners if desired */
+    box-shadow: 0 0 5px white(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+    width: 40cqw;
+    height: 40ch;
+    margin-top: 10px; /* Move the container down by 20 pixels */
+  }

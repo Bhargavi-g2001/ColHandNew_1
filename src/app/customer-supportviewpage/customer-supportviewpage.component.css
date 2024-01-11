@@ -1,0 +1,19 @@
+.image{
+    background-image:url("https://image.freepik.com/free-photo/innovation-creative-market-concept-business-man-holding-digital-image-brainstorming-palm-imagination-power_28629-1150.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+background-attachment: fixed;
+}
+table{
+    width:70%
+    
+}
+th,td{
+    padding: 7px;
+    text-align: center;
+    table-layout:fixed;
+}
+.centered-text {
+    text-align: center;
+    color: white;
+  }

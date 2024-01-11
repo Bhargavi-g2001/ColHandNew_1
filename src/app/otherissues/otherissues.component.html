@@ -1,0 +1,140 @@
+
+
+<!-- <div class="cust_area"> -->
+    <body class="sub_page">
+        <div class="hero_area">
+          <!-- header section strats -->
+          <header class="header_section">
+            <div class="container">
+              <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+                <a class="navbar-brand mr-5" href="index.html">
+                  <img src="../assets/images/pay3.png" alt="">
+                  <span style="color: red;">
+                    Propay
+                  </span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                    <ul class="navbar-nav  ">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" routerLink="/about"> About </a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" routerLink="/admin">Admin </a>
+                          </li>
+                        <li class="nav-item">
+                          <a class="nav-link" routerLink="/CustomerSupport"> CustomerSupport </a>
+                        </li> -->
+                        <li class="nav-item">
+                          <a class="nav-link" routerLink="/customer1"> Logout </a>
+                        </li>
+                       
+                      </ul>
+                    <!-- <form class="form-inline">
+                      <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                    </form> -->
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </header>
+          <!-- end header section -->
+          
+        </div>
+    </body><br>
+    <div class="contain" >
+        <!-- <body> -->
+           
+                <h2>Select an Issue:</h2>
+        
+                <!-- <form #frm="ngForm"> -->
+                    <label for="issue1"><input type="radio"  [(ngModel)]="selectedOption" value="Payment Failure Issue"> Payment Failure Issue</label><br>
+                    <label for="issue2"><input type="radio" [(ngModel)]="selectedOption" value="Banking Issue"> Banking Issue</label><br>
+                    <label for="issue3"><input type="radio"   [(ngModel)]="selectedOption" value="Downtime and Maintenance Issue">Downtime and Maintenance Issue</label><br>
+                    <label for="issue4"><input type="radio"    [(ngModel)]="selectedOption"value="Service Disruption Issue"> Service Disruption Issue</label><br>
+                    <label for="issue5"><input type="radio"   [(ngModel)]="selectedOption"value="Payment Delays Issue"> Payment Delays Issue</label><br>
+                    <label for="issue6"><input type="radio"   [(ngModel)]="selectedOption" value=" Service Provider Issue"> Service Provider Issues </label><br>
+                    <label for="issue7"><input type="radio"   [(ngModel)]="selectedOption" value="Incorrect Bill Amounts Issue">Incorrect Bill Amounts Issue</label><br>
+                    <label for="issue8"><input type="radio"   [(ngModel)]="selectedOption" value="Wrong Mobile Number or Account Number Issue"> Wrong Mobile Number or Account Number Issue</label><br>
+               
+                    <br>
+                    <button type="submit" value="Submit" (click)="onOptionChange()"  style= " background-color: rgb(235, 12, 12); color: aliceblue;">submit</button>
+                    <div *ngIf="valid" style="color:green"> Your issue will be resolved soon.  Thanks for reaching out</div>
+                <!-- </form> -->
+              </div>
+        <!-- </body> -->
+        
+<!-- </div> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recharge Installment Options</title>
+</head>
+<body style="text-align: center;">
+    <h1>Recharge Installment Options</h1>
+
+    <form action="process_recharge.php" method="POST">
+        <label for="installments">Select the number of installments:</label>
+        <select name="installments" id="installments">
+           
+            <option value="2">2 Installments</option>
+            <option value="3">3 Installments</option>
+            
+        </select><br>
+
+        You can add more fields for user information here, like phone number, amount, etc. -->
+
+        <!-- <button type="submit">Proceed to Pay</button>
+    </form>
+</body>
+</html> --> 
+
+
+
+<!-- Payment Failure
+Wrong Mobile Number or Account Number
+Service Disruption
+Downtime and Maintenance
+Payment Delays
+Service Provider Issues
+Lack of Payment Options
+Network Connectivity
+Banking Issues
+Fraud and Security
+Incorrect Bill Amounts
+Refund Issues
+Customer Support Delays
+Complicated Recharge Plans
+Expired Offers and Discounts
+Inadequate Notifications -->
+
+<!-- <body>
+    <div class="container">
+        <h2>Select an Issue:</h2>
+
+        <form>
+            <label for="issue1"><input type="radio" id="issue1" name="issue" value="Payment Failure"> Payment Failure</label><br>
+            <label for="issue2"><input type="radio" id="issue2" name="issue" value="Wrong Mobile Number or Account Number"> Wrong Mobile Number or Account Number</label><br>
+            <label for="issue3"><input type="radio" id="issue3" name="issue" value="Service Disruption"> Service Disruption</label><br>
+            
+
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</div> -->
+

@@ -1,0 +1,132 @@
+<!-- <p>customer1 works!</p> -->
+
+<body class="sub_page">
+    <div class="hero_area">
+      <!-- header section strats -->
+      <header class="header_section">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+            <a class="navbar-brand mr-5" href="index.html">
+              <img src="../assets/images/pay3.png" alt="">
+              <span style="color: red;">
+                Propay
+              </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                <ul class="navbar-nav  ">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" routerLink="/about"> About </a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" routerLink="/admin">Admin </a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" routerLink="/CustomerSupport"> CustomerSupport </a>
+                    </li> -->
+                    <li class="nav-item">
+                      <a class="nav-link" routerLink="/Customer"> Customer </a>
+
+                    </li>
+                    <!-- <li class="nav-item">
+                      <a class="nav-link" routerLink="/Home"> Logout </a>
+                    </li> -->
+                  </ul>
+                <!-- <form class="form-inline">
+                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                </form> -->
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- end header section -->
+    </div>
+
+
+  <div class="body_bg layout_padding">
+
+  <!-- contact section -->
+
+  <section class="contact_section">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Customer1 Login
+          <!-- Let's Get In Touch! -->
+        </h2>
+      </div>
+    </div>
+    <!-- <marquee width="60%" direction="left" height="100px">
+        This is a sample scrolling text that has scrolls in the upper direction.
+        </marquee> -->
+    <div class="container contact_bg layout_padding2-top">
+        <marquee class="blink" width="70%" direction="left" height="100px" >
+          <h4> Login and Pay your bills now</h4>
+            </marquee>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="contact_form ">
+            <form action="" class="was-validated" #frm="ngForm"> 
+            <!-- <form (ngSubmit)="generateOTP(frm)" #otpForm="ngForm"> -->
+              <h2>Enter Your  Credentials</h2>
+               Phone<input type="text"  id="phone" ngModel #phone="ngModel" name="phone"  placeholder="Enter Mobile number " required pattern="^\+\d{12}$">
+              <div *ngIf="phone.touched">
+
+                <div *ngIf="phone.invalid">
+              
+                  <small class="text-danger" *ngIf="phone.errors?.['required']">Mobile Number cannot be empty</small>
+              
+                          <small class="text-danger" *ngIf="phone.errors?.['pattern']">Enter valid number</small>
+                </div>
+              
+              </div>
+              <br>
+        <br><br> 
+              
+              
+              
+              <button (click)="generateOTP(frm)" type="submit"  [disabled]="!frm.valid">
+                Generate OTP
+              </button> 
+
+
+
+ 
+      <!-- <input type="submit" [disabled]="frm.form.invalid"  (click)="generateOTP(frm)" value="Verify Phone Number" id="log" style="background-color: #2f3040;"> -->
+
+        
+              <!-- <a href="payment" >
+                Submit
+              </a> -->
+              <!-- <a href="paymentoptions" style="color:black">
+                Submit
+              </a> -->
+             
+            </form>
+          </div>
+        </div>
+        <div class="col-md-16">
+          <!-- <div class="img-box">
+            <img src="../assets/images/admin.png" alt="">
+          </div> -->
+        </div>
+        <div class="col-md-6">
+          <div class="img-box">
+            <!-- <img src="../assets/images/customersupport.png" alt=""> -->
+           <img src="../assets/images/OIP.png" alt="">
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end contact section -->

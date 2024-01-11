@@ -1,0 +1,93 @@
+
+<body class="sub_page">
+    <div class="hero_area">
+      <!-- header section strats -->
+      <header class="header_section">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+            <a class="navbar-brand mr-5" href="index.html">
+              <img src="../assets/images/pay3.png" alt="">
+              <span style="color: red;">
+                Propay
+              </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                <ul class="navbar-nav  ">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" routerLink="/about"> About </a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" routerLink="/admin">Admin </a>
+                      </li> -->
+                    <li class="nav-item">
+                      <a class="nav-link" routerLink="/CustomerSupport"> CustomerSupport </a>
+                    </li>
+                    <!-- <li class="nav-item">
+                      <a class="nav-link" routerLink="/Customer"> Customer </a>
+                    </li> -->
+                   
+                  </ul>
+                <!-- <form class="form-inline">
+                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                </form> -->
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- end header section -->
+    </div>
+
+
+  <div class="body_bg layout_padding">
+
+  <!-- contact section -->
+
+  <section class="contact_section">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          CustomerSupport  Login
+          <!-- Let's Get In Touch! -->
+        </h2>
+      </div>
+    </div>
+    <div class="container contact_bg layout_padding2-top">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="contact_form ">
+            <form action="" #frm="ngForm">
+              <h2>Enter Your  Credentials</h2>
+              UserName<input id="username" ngModel name="username"  type="text" placeholder="Enter UserName ">
+                Password<input type="password" ngModel name="password" placeholder="Enter Password">
+                <!-- <input type="text" placeholder="Message" class="message_input"> -->
+                <button (click)="signin(frm)" type="submit"> 
+                  submit
+                </button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-16">
+          <!-- <div class="img-box">
+            <img src="../assets/images/admin.png" alt="">
+          </div> -->
+        </div>
+        <div class="col-md-6">
+          <div class="img-box">
+            <!-- <img src="../assets/images/customersupport.png" alt=""> -->
+           <img src="https://www.iopex.com/img/02d4a911-2922-4eb9-a7e5-55d356957150/would-you-take-the-extra-mile-to-establish-the-best-customer-support-blog-banner.jpg?fm=jpg&q=80&fit=max&crop=962%2C608%2C0%2C0&q=100" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end contact section -->

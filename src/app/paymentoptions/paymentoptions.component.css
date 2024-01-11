@@ -1,0 +1,36 @@
+.align{
+    text-align: center;
+}
+/* .image1{
+    background-image:url("https://image.freepik.com/free-photo/innovation-creative-market-concept-business-man-holding-digital-image-brainstorming-palm-imagination-power_28629-1150.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+} */
+.button-container {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Make the container fill the full viewport height */
+  }
+  .button-table {
+    display: table;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .button-row {
+    display: table-row;
+  }
+  
+  .button-row button {
+    display: table-cell;
+    width: 200px; /* Set a fixed width for all buttons */
+    height: 55px; /* Set a fixed height for all buttons */
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Adjust the button styling as needed */
+  
